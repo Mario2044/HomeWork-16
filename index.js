@@ -1,9 +1,8 @@
 //Реалізуйте функцію generateKey(length, characters), 
 //яка повертає рядок випадкових символів із набору characters довжиною length. span>
-
+let characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
 function generateKey(length) {
     let result = '';
-    let characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
     let charactersLength = characters.length;
     let counter = 0;
     while (counter < length) {
@@ -13,6 +12,7 @@ function generateKey(length) {
     return result;
 }
 
-console.log(generateKey(16)); 
+const key = generateKey(16, characters);
+console.log(key); 
 
 
